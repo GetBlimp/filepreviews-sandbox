@@ -1,7 +1,7 @@
 {
   "name": "fp-sandbox",
   "version": "1.0.0",
-  "description": "Sandbox to test the FilePreviews API.",
+  "description": "Sandbox environment to test the FilePreviews API.",
   "main": "app/index.js",
   "scripts": {
     "setup": "npm i && bower install",

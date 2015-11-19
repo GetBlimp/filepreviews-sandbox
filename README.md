@@ -1,4 +1,5 @@
 # FilePreviews Sandbox
+Sandbox environment to test the FilePreviews API.
 
 ## Install Dependencies
   npm run setup
