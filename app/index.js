@@ -22,6 +22,7 @@ window.FP_EMBED_SANDBOX = () => {
     const fileUrl = $box.getAttribute('data-file-url')
     const metadata = $box.getAttribute('data-metadata')
     const clientKey = $box.getAttribute('data-client-key')
+    const filePickerKey = $box.getAttribute('data-filepicker-key')
 
     const serverKey = (
       $box.getAttribute('data-server-key') ||
@@ -42,6 +43,7 @@ window.FP_EMBED_SANDBOX = () => {
       clientKey,
       serverKey,
       serverSecretKey,
+      filePickerKey,
 
       previewOptions: {
         pages: pages || 'all',
