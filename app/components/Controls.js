@@ -9,7 +9,7 @@ const BEM = bemify('controls')
 
 export default class Controls extends Component {
   componentDidMount() {
-    filepicker.setKey('AqHhfHUMAQIOff76iEW6Oz')
+    filepicker.setKey(this.props.filePickerKey)
   }
 
   render() {

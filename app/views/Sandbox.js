@@ -59,6 +59,7 @@ export default class Sandbox extends Component {
         <Controls
           fileUrl={this.state.fileUrl}
           sandboxId={this.props.sandboxId}
+          filePickerKey={this.props.filePickerKey}
           previewOptions={this.state.previewOptions}
           updateOptions={::this.updateOptions}
           updateFileUrl={::this.updateFileUrl}
