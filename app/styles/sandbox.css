@@ -1,0 +1,31 @@
+.fp-sandbox .sandbox {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.fp-sandbox .sandbox {
+  min-width: 850px;
+}
+
+@media (max-width: 899px) {
+  .fp-sandbox .sandbox {
+    flex-wrap: wrap !important;
+  }
+
+  .fp-sandbox .controls {
+    width: 50% !important;
+  }
+
+  .fp-sandbox .preview {
+    width: 50% !important;
+  }
+
+  .fp-sandbox .snippet {
+    border-top: 1px solid #f5f5f5 !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,61 @@
+.fp-sandbox .btn {
+  color: #0280ff;
+  border: 1px solid #0280ff;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fp-sandbox .btn:hover,
+.fp-sandbox .btn.btn--active,
+.fp-sandbox .btn.btn--icon-only:hover {
+  color: #fcfcfc;
+  background-color: #0280ff;
+}
+
+.fp-sandbox .btn.btn--icon-only {
+  background-color: #fcfcfc;
+  min-width: 46px;
+}
+
+.fp-sandbox .btn.btn--icon-only .icon {
+  margin-left: 0;
+}
+
+.fp-sandbox .btn > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fp-sandbox .btn .icon {
+  margin-left: 5px;
+}
+
+.fp-sandbox .btn .icon path {
+  fill: #0280ff;
+}
+
+.fp-sandbox .btn:hover .icon path {
+  fill: #fcfcfc;
+}
+
+.fp-sandbox .select {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  padding: 10px;
+  min-width: 80px;
+}
+
+.fp-sandbox .select:hover {
+  border-color: #0280ff;
+}

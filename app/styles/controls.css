@@ -1,0 +1,127 @@
+.fp-sandbox .controls {
+  background-color: #f7f7f7;
+  width: 20%;
+  display: flex;
+  min-width: 256px;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fp-sandbox .controls__pages,
+.fp-sandbox .controls__header,
+.fp-sandbox .controls__footer,
+.fp-sandbox .controls__formats,
+.fp-sandbox .controls__metadata,
+.fp-sandbox .controls__dimensions {
+  width: 100%;
+  padding: 10px;
+}
+
+.fp-sandbox .controls__footer {
+  border-top: 1px solid #e0e0e0;
+  background-color: #fcfcfc;
+  height: 62px;
+  z-index: 10;
+}
+
+.fp-sandbox .controls__title {
+  font-size: 14px;
+  margin: 0 0 5px;
+  display: flex;
+}
+
+.fp-sandbox .controls__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.fp-sandbox .controls__row:last-child {
+  margin-bottom: 0;
+}
+
+.fp-sandbox .controls__row > .controls__label {
+  width: 50%;
+}
+
+.fp-sandbox .controls__url-input-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  display: flex;
+  padding: 2px 2px 2px 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fp-sandbox .controls__url-input {
+  border: 0 none;
+  font-size: 14px;
+  font-weight: 400;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: 0 8px 0 0;
+}
+
+.fp-sandbox [data-action="generatePreview"] {
+  width: 100%;
+}
+
+.fp-sandbox .controls__label {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.fp-sandbox .controls__radio,
+.fp-sandbox .controls__checkbox {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.fp-sandbox .controls__select {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  background-image: none;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 80px;
+  height: 35px;
+  padding: 5px;
+}
+
+.fp-sandbox .controls__textfield {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  width: calc(50% - 10px);
+  height: 35px;
+  padding: 8px 8px 9px;
+}
+
+.fp-sandbox .controls__textfield:focus {
+  border-color: #0077ff;
+}
+
+.fp-sandbox .controls__textfield-divider {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.fp-sandbox .controls__textfield-divider:before {
+  content: "×";
+}
+
+.fp-sandbox [data-value="pages-range"] {
+  flex: 1;
+  width: 100%;
+}

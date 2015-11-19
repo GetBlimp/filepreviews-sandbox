@@ -1,0 +1,23 @@
+{
+  "name": "fp-sandbox",
+  "version": "1.0.0",
+  "authors": [
+    "Elving Rodriguez <elving.pr@gmail.com>"
+  ],
+  "description": "Sandbox to test the FilePreviews API.",
+  "main": "app/index.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "filepreviews": "~2.0.3"
+  }
+}

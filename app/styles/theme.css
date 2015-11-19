@@ -1,0 +1,120 @@
+.fp-sandbox pre[class*="language-"],
+.fp-sandbox code[class*="language-"] {
+  color: #5f7d8c;
+  font-family: Courier, monospace;
+  border-radius: 4px;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.fp-sandbox pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+.fp-sandbox code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #e8e8e8;
+}
+
+.fp-sandbox pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+.fp-sandbox code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #eeeeee;
+}
+
+.fp-sandbox pre[class*="language-"] {
+  padding: 10px;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1px solid #e8e8e8;
+  background-color: #fafafa;
+}
+
+.fp-sandbox :not(pre) > code[class*="language-"],
+.fp-sandbox pre[class*="language-"] {
+}
+
+/* Inline code */
+.fp-sandbox :not(pre) > code[class*="language-"] {
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.fp-sandbox .token.comment,
+.fp-sandbox .token.prolog,
+.fp-sandbox .token.doctype,
+.fp-sandbox .token.cdata {
+  color: #b0bec5;
+	font-style: italic;
+}
+
+.fp-sandbox .token.namespace {
+  opacity: .7;
+}
+
+.fp-sandbox .token.string,
+.fp-sandbox .token.attr-value {
+  color: #96be64;
+}
+
+.fp-sandbox .token.operator {
+  color: #82cdc6;
+}
+
+.fp-sandbox .token.punctuation {
+  color: #64818f;
+}
+
+.fp-sandbox .token.entity,
+.fp-sandbox .token.url,
+.fp-sandbox .token.symbol,
+.fp-sandbox .token.number,
+.fp-sandbox .token.boolean,
+.fp-sandbox .token.variable,
+.fp-sandbox .token.constant,
+.fp-sandbox .token.property,
+.fp-sandbox .token.regex,
+.fp-sandbox .token.inserted {
+  color: #edb561;
+}
+
+.fp-sandbox .token.atrule,
+.fp-sandbox .token.keyword,
+.fp-sandbox .token.attr-name,
+.fp-sandbox .language-autohotkey .token.selector {
+  color: #8394c9;
+}
+
+.fp-sandbox .token.function,
+.fp-sandbox .token.deleted,
+.fp-sandbox .language-autohotkey .token.tag {
+  color: #f65848;
+}
+
+.fp-sandbox .token.tag,
+.fp-sandbox .token.selector,
+.fp-sandbox .language-autohotkey .token.keyword {
+  color: #007cff;
+}
+
+.fp-sandbox .token.class-name {
+  color: #bcb7b7;
+}
+
+.fp-sandbox .token.important,
+.fp-sandbox .token.function,
+.fp-sandbox .token.bold {
+  font-weight: bold;
+}
+
+.fp-sandbox .token.italic {
+  font-style: italic;
+}

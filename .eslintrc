@@ -1,0 +1,57 @@
+{
+  "parser": "babel-eslint",
+
+  "env": {
+    "node": true,
+    "browser": true
+  },
+
+  "rules": {
+    "strict": 0,
+    "no-undef": 0,
+    "no-use-before-define": 0,
+    "no-unused-vars": 0,
+    "yoda": 0,
+    "quotes": [0, "single"],
+    "semi": 0,
+    "curly": 0,
+    "eol-last": 0,
+    "max-len": [1, 80],
+    "space-before-blocks": 2,
+    "no-underscore-dangle": 0,
+    "quotes": [2, "single"],
+    "strict": [2, "never"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2
+  },
+
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
+  },
+
+  "plugins": [
+    "react"
+  ]
+}

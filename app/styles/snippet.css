@@ -1,0 +1,106 @@
+.fp-sandbox .snippet {
+  background-color: #fff;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fp-sandbox .snippet__loader {
+  margin: 0 auto;
+}
+
+.fp-sandbox .snippet__wrapper {
+  width: 100%;
+}
+
+.fp-sandbox .snippet__wrapper[data-snippet-type="result"] .snippet__result-wrapper {
+  display: block;
+}
+
+.fp-sandbox .snippet__wrapper[data-snippet-type="code"] .snippet__samples {
+  display: block;
+}
+
+.fp-sandbox .snippet__actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.fp-sandbox .snippet__actions-left,
+.fp-sandbox .snippet__actions-right {
+  display: flex;
+  align-items: center;
+}
+
+.fp-sandbox [data-action="showResult"] {
+  border-right: 0 none;
+  border-radius: 4px 0 0 4px;
+}
+
+.fp-sandbox [data-action="showCode"] {
+  border-radius: 0 4px 4px 0;
+}
+
+.fp-sandbox [data-action="showCode"],
+.fp-sandbox [data-action="showResult"] {
+  width: 65px;
+}
+
+.fp-sandbox .snippet__result-wrapper,
+.fp-sandbox .snippet__sample-wrapper {
+  position: relative;
+}
+
+.fp-sandbox .snippet__result,
+.fp-sandbox .snippet__sample {
+  position: relative;
+  min-height: 384px;
+  max-height: 384px;
+}
+
+.fp-sandbox .snippet__samples,
+.fp-sandbox .snippet__result-wrapper,
+.fp-sandbox .snippet__sample-wrapper {
+  display: none;
+}
+
+.fp-sandbox .snippet__result-wrapper,
+.fp-sandbox .snippet__sample-wrapper {
+  padding-bottom: 50px;
+}
+
+.fp-sandbox [data-snippet-language="node"] [data-language="js"] {
+  display: block;
+}
+
+.fp-sandbox [data-snippet-language="python"] [data-language="python"] {
+  display: block;
+}
+
+.fp-sandbox [data-snippet-language="ruby"] [data-language="ruby"] {
+  display: block;
+}
+
+.fp-sandbox [data-snippet-language="go"] [data-language="go"] {
+  display: block;
+}
+
+.fp-sandbox [data-snippet-language="elixir"] [data-language="elixir"] {
+  display: block;
+}
+
+.fp-sandbox [data-snippet-language="php"] [data-language="php"] {
+  display: block;
+}
+
+.fp-sandbox [data-action="copyCode"] {
+  background-color: #fafafa;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}

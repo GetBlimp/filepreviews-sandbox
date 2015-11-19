@@ -1,0 +1,115 @@
+.fp-sandbox .preview {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  background-color: #fff;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.fp-sandbox [data-color="white"] {
+  background-color: #fff;
+}
+
+.fp-sandbox [data-color="black"] {
+  background-color: #000;
+}
+
+.fp-sandbox [data-color="transparent"] {
+  background-size: 15px 15px;
+  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  background-position: center center;
+}
+
+.fp-sandbox .preview__loader {
+  margin: 0 auto;
+}
+
+.fp-sandbox .preview__image-wrapper {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+.fp-sandbox .preview__image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fp-sandbox .preview__actions {
+  left: 10px;
+  width: calc(100% - 20px);
+  bottom: 10px;
+  z-index: 100;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.fp-sandbox .preview__actions-left,
+.fp-sandbox .preview__actions-right,
+.fp-sandbox .preview__actions-thumbnail-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fp-sandbox .preview__actions-thumbnail-index {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px;
+  display: flex;
+}
+
+.fp-sandbox [data-color="black"] .preview__actions-thumbnail-index {
+  color: #ffffff;
+}
+
+.fp-sandbox [data-action="setBgBlack"],
+.fp-sandbox [data-action="setBgWhite"],
+.fp-sandbox [data-action="viewImageSource"],
+.fp-sandbox [data-action="setBgTransparent"] {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.fp-sandbox [data-action="setBgBlack"],
+.fp-sandbox [data-action="setBgWhite"],
+.fp-sandbox [data-action="setBgTransparent"] {
+  border: 0 none;
+  border-radius: 4px;
+}
+
+.fp-sandbox [data-action="setBgBlack"] {
+  border: 1px solid #007cff;
+  background-color: #000;
+}
+
+.fp-sandbox [data-action="setBgWhite"] {
+  border: 1px solid #007cff;
+  background-color: #fff;
+}
+
+.fp-sandbox [data-action="setBgTransparent"] {
+  border: 1px solid #007cff;
+  background-color: #ffffff;
+  background-size: 8px 8px;
+  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  background-position: center center;
+}
+
+.fp-sandbox [data-action="viewImageSource"] {
+  background-color: #fff;
+  min-width: 40px !important;
+}
