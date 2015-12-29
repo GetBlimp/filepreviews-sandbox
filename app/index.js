@@ -22,6 +22,7 @@ window.FP_EMBED_SANDBOX = () => {
     const fileUrl = $box.getAttribute('data-file-url')
     const metadata = $box.getAttribute('data-metadata')
     const clientKey = $box.getAttribute('data-client-key')
+    const clientApiUrl = $box.getAttribute('data-client-api-url')
     const filePickerKey = $box.getAttribute('data-filepicker-key')
 
     const serverKey = (
@@ -42,6 +43,7 @@ window.FP_EMBED_SANDBOX = () => {
       sandboxId,
       clientKey,
       serverKey,
+      clientApiUrl,
       serverSecretKey,
       filePickerKey,
 
