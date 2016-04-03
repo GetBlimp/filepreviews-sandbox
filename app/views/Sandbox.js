@@ -49,7 +49,11 @@ export default class Sandbox extends Component {
       throw new Error('No FilePreviews Client Key provided.')
     }
 
-    this.preview = new FilePreviews({ apiKey: props.clientKey })
+    this.preview = new FilePreviews({
+      apiKey: props.clientKey,
+      apiUrl: props.clientApiUrl
+    })
+
     this.FilePreviewsInterval = null
   }
 
