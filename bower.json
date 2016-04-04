@@ -18,6 +18,6 @@
     "tests"
   ],
   "dependencies": {
-    "filepreviews": "~2.0.3"
+    "filepreviews": "^2.1.0"
   }
 }
