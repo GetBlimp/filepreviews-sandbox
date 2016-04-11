@@ -37,8 +37,9 @@ export default class Sandbox extends Component {
         metadata: props.previewOptions.metadata,
 
         uploader: {
+          public: true,
+
           headers: {
-            'x-amz-acl': 'public-read',
             'Cache-Control': 'max-age=315360000, no-transform, private'
           }
         }
