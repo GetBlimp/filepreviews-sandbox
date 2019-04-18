@@ -124,6 +124,28 @@ export default class Controls extends Component {
             <span className={BEM('&label-text')}>Webpage</span>
           </label>
         </div>
+        <div className={BEM('&row')}>
+          <label className={BEM('&label')}>
+            <input
+              ref="rawOption"
+              type="checkbox"
+              value="raw"
+              onChange={::this.onMetadataChange}
+              className={BEM('&checkbox')}
+              checked={metadata.includes('raw')}/>
+            <span className={BEM('&label-text')}>RAW</span>
+          </label>
+          <label className={BEM('&label')}>
+            <input
+              ref="sketchOption"
+              type="checkbox"
+              value="sketch"
+              onChange={::this.onMetadataChange}
+              className={BEM('&checkbox')}
+              checked={metadata.includes('sketch')}/>
+            <span className={BEM('&label-text')}>Sketch</span>
+          </label>
+        </div>
       </div>
     )
   }
@@ -150,11 +172,11 @@ export default class Controls extends Component {
             <input
               type="radio"
               name={`${sandboxId}-format`}
-              value="jpg"
-              checked={format === 'jpg'}
+              value="webp"
+              checked={format === 'webp'}
               onChange={::this.onFormatChange}
               className={BEM('&radio')}/>
-            <span className={BEM('&label-text')}>.jpg</span>
+            <span className={BEM('&label-text')}>.webp</span>
           </label>
         </div>
         <div className={BEM('&row')}>
@@ -167,6 +189,16 @@ export default class Controls extends Component {
               onChange={::this.onFormatChange}
               className={BEM('&radio')}/>
             <span className={BEM('&label-text')}>.jpeg</span>
+          </label>
+          <label className={BEM('&label')}>
+            <input
+              type="radio"
+              name={`${sandboxId}-format`}
+              value="jpg"
+              checked={format === 'jpg'}
+              onChange={::this.onFormatChange}
+              className={BEM('&radio')}/>
+            <span className={BEM('&label-text')}>.jpg</span>
           </label>
         </div>
       </div>
@@ -274,7 +306,9 @@ export default class Controls extends Component {
       this.refs.exifOption,
       this.refs.multimediaOption,
       this.refs.checksumOption,
-      this.refs.webpageOption
+      this.refs.webpageOption,
+      this.refs.rawOption,
+      this.refs.sketchOption
     ]
 
     const metadata = options
